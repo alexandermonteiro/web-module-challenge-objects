@@ -134,15 +134,25 @@ Use the addReview function below to do the following:
   🌟 EXAMPLE: addReview(reviews, 'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!') should add the following to the end of the array: {name: 'Daniela', rating: 5, feedback: 'Beautiful atmosphere and wonderful vegan options!'}
   4. Return the resulting array
 */
-
 function addReview(array, name, rating, feedback) {
-  // const Review {
-  //   name
-  // }
-  // reviews.push(array);
+  array.push({ name, rating, feedback });
+  return array; //array.push({})
 }
+console.log("--->", addReview(reviews, "Daniela", 5, "great eats!"));
 
-// console.log("task5", addReview(reviews));
+// var obj = {
+//   "name": name,
+//   "rating": rating,
+//   "feedback": feedback,
+// };
+
+// function addReview(reviews, name, rating, feedback) {
+//   return reviews.push(obj)
+// }
+
+// console.log("task5--->", addReview(reviews, Priscila, x, x) );
+
+// console.log("task5", obj("name", "rating", "feedbackx") );
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
